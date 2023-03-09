@@ -1,0 +1,24 @@
+{
+  "name": "testmomji",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Idruk/TestMomji.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Idruk/TestMomji/issues"
+  },
+  "homepage": "https://github.com/Idruk/TestMomji#readme",
+  "dependencies": {
+    "nodemon": "^2.0.21",
+    "pg": "^8.10.0",
+    "sequelize": "^6.29.1"
+  }
+}
