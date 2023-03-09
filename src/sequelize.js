@@ -26,10 +26,12 @@ Test.init( {
     lastModifiedAt: {
         type: DATE,
         allownull: true,
+        defaultValue: new Date(),
     },
     createdAt: {
         type: DATE,
         allownull: true,
+        defaultValue: new Date(),
     }
 }, {sequelize, tableName: 'test', timestamps: false})
 
@@ -72,7 +74,6 @@ async function updateDataBase(filePath) {
         const match = await sequelize.models.Test.findOne({where: {id: e.id}})
 
         if (match) {
-            console.log(match, e.id)
             sequelize.models.Test.update({productTitle: e.productTitle, price: e.price, vat: e.vat}, {where: {id: e.id}})
         } else {
             sequelize.models.Test.create({productTitle: e.productTitle, price: e.price, vat: e.vat})
