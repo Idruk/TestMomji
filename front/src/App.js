@@ -4,7 +4,7 @@ function App() {
 
   return (
     <div>
-      <div>DropZone</div>
+      <div>File Upload</div>
       <UploadFileZone></UploadFileZone>
     </div>
   );
